@@ -1,5 +1,5 @@
 def solution1(data):
-    """Count the number of increases from given list m."""
+    """Count the number of increases from given list"""
     res = 0
     for i in range(1, len(data)):
         if data[i] > data[i - 1]:
