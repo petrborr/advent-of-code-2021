@@ -12,6 +12,7 @@ def solution1(commands):
 
     return horizontal_position * depth
 
+
 def solution2(commands):
     horizontal_position = 0
     depth = 0
@@ -31,7 +32,7 @@ def solution2(commands):
 
 if __name__ == '__main__':
     with open('input.txt') as f:
-        lines = [x for x in f.read().splitlines()]
+        lines = f.read().splitlines()
         commands = [line.split() for line in lines]
         print(solution1(commands))
         print(solution2(commands))
